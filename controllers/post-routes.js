@@ -71,6 +71,21 @@ router.get('/:id', (req, res) => {
   });
 
   // create post
+  router.post('/', (req, res) => {
+    // expects {title: 'Taskmaster goes public!', post_text: 'Hey, hello, hi' user_id: 1}
+    Post.create({
+      title: req.body.title,
+      post_text: req.body.text,
+      user_id: req.body.user_id
+    })
+      .then(dbPostData => res.json(dbPostData))
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
+  //update post by id
   
 
 

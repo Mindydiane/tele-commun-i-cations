@@ -8,18 +8,23 @@ html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  color: #2c2c70;
+  background-color: lightgray;
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #113766;
+  background-color: magenta;
   font-weight: bold;
   transition: color 0.1s;
+  border-radius: 0.4em;
+  padding: 3px;
 }
 
 a:hover {
   color: #3486eb;
+  background: none;
 }
 /* button style */
 button {
@@ -39,19 +44,22 @@ button:hover {
 .btn-no-style {
   background: none;
   border: none;
-  padding: 0;
+  padding: 4px;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #113766;
+  background-color: magenta;
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
   margin-left: 16px;
+  border-radius: 0.5em;
 }
 
 .btn-no-style:hover {
   background: none;
   color: #3486eb;
+  border-radius: 0.5em;
 }
 .delete-post-btn {
   background-color: #d41414;
@@ -64,6 +72,7 @@ button:hover {
 /* header style */
 header {
   border-bottom: 1px solid #ccc;
+  background-color: #131334;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -73,7 +82,8 @@ header {
 }
 
 header a {
-  margin: 5px;
+  margin: 7px;
+  padding: 3px;
 }
 
 /* main style start */
@@ -82,7 +92,8 @@ main {
   padding: 2% 4%;
 }
 h1 {
-  background-color: #b0e0e6;
+  background-color: #020e66;
+  color: #41cded;
   margin: 5px;
   border-radius: 5px;
   padding: 5px;

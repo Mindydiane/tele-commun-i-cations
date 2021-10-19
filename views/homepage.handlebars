@@ -1,16 +1,19 @@
 {{#unless loggedIn}}
   <ul class="post-list">
     {{#each posts}}
-    <li>
-      <article class="post">
+      <li>
+        <article class="post">
           <div class="title">
             <h2>{{title}}</h2>
           </div>
           <div class="date">
-              by {{user.username}} on {{format_date created_at}}
+            by
+            {{user.username}}
+            on
+            {{format_date created_at}}
           </div>
-      </article>
-    </li>
+        </article>
+      </li>
     {{/each}}
   </ul>
 {{/unless}}
@@ -18,16 +21,19 @@
 {{#if loggedIn}}
   <ul class="post-list">
     {{#each posts}}
-    <li>
-      <article class="post">
+      <li>
+        <article class="post">
           <div class="title">
             <a href="/post/{{id}}">{{title}}</a>
           </div>
           <div class="date">
-              by {{user.username}} on {{format_date created_at}}
+            by
+            {{user.username}}
+            on
+            {{format_date created_at}}
           </div>
-      </article>
-    </li>
+        </article>
+      </li>
     {{/each}}
   </ul>
 {{/if}}

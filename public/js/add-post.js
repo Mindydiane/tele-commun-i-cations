@@ -1,7 +1,7 @@
 async function newFormHandler(event) {
   event.preventDefault();
 
-  console.log("I've been submeeeteeeed");
+  console.log("I've been submittedddd");
 
   const title = document.querySelector('input[name="post-title"]').value;
   const post_text = document.querySelector('textarea[name="post-text"]').value;

@@ -37,7 +37,7 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
 });
-// get single post
+// get a single post
 router.get("/post/:id", (req, res) => {
   Post.findOne({
     where: {
@@ -77,6 +77,15 @@ router.get("/post/:id", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+// homepage login
+router.get("/login", (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
+
+  res.render("login");
 });
 
 module.exports = router;

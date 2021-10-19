@@ -47,6 +47,7 @@ router.get("/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
+// create a user
 router.post("/", (req, res) => {
   User.create({
     username: req.body.username,
@@ -67,7 +68,7 @@ router.post("/", (req, res) => {
       res.status(500).json(err);
     });
   router.post("/login", (req, res) => {
-    // expects {username: 'lernantino', password: 'password1234'}
+    // expects {username: 'valentino', password: 'password1234'}
     User.findOne({
       where: {
         email: req.body.email,
@@ -108,7 +109,7 @@ router.post("/", (req, res) => {
   });
 
   router.put("/:id", (req, res) => {
-    // expects {username: 'Lernantino', password: 'password1234'}
+    // expects {username: 'valentino', password: 'password1234'}
 
     // pass in req.body instead to only update what's passed through
     User.update(req.body, {

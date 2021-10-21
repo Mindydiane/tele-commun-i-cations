@@ -9,6 +9,6 @@
 
 ![localhost_3001_ (1)](https://user-images.githubusercontent.com/80286982/138004168-f4b35897-d7cc-4d83-b231-c5ad7af17468.png)
 
-### Deployed Heroku App link:
+### Heroku App Deployed link:
 
 https://tele-tech-blog4404.herokuapp.com/

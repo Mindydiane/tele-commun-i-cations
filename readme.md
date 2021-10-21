@@ -8,3 +8,7 @@
 ![localhost_3001_post_4](https://user-images.githubusercontent.com/80286982/138004025-f3d6cb72-3dcb-41db-bcc2-cb36fe7c9eff.png)
 
 ![localhost_3001_ (1)](https://user-images.githubusercontent.com/80286982/138004168-f4b35897-d7cc-4d83-b231-c5ad7af17468.png)
+
+### Deployed Heroku App link:
+
+https://tele-tech-blog4404.herokuapp.com/
